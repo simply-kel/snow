@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "snow",
+  "version": "${version}",
+  "name": "Snow",
+  "description": "Make your world snowy!",
+  "authors": [
+    "Simply_Kel"
+  ],
+  "contact": {
+    "website": "https://modrinth.com/mod/snow",
+    "repo": "https://github.com/simply-kel/snow"
+  },
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "client": [
+      "og.kel.snow.client.SnowClient"
+    ],
+    "main": [
+      "og.kel.snow.Snow"
+    ]
+  },
+  "mixins": [
+    "snow.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
